@@ -1,0 +1,7 @@
+<p>main-page works!</p>
+<div *ngFor="let plant of plants">
+  <p>Nazwa: {{ plant.name }}</p>
+  <p>Cena {{ plant.price }}</p>
+  <div [innerHTML]="plant.descriptionHtml"></div>
+  <p></p>
+</div>
